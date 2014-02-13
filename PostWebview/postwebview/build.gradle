@@ -1,11 +1,15 @@
 apply plugin: 'android'
 
+repositories {
+    mavenCentral()
+}
+
 android {
     compileSdkVersion 19
     buildToolsVersion "19.0.0"
 
     defaultConfig {
-        minSdkVersion 7
+        minSdkVersion 11
         targetSdkVersion 19
         versionCode 1
         versionName "1.0"
@@ -20,4 +24,7 @@ android {
 
 dependencies {
     compile 'com.android.support:appcompat-v7:+'
+    compile 'com.squareup.okhttp:okhttp:1.3.0'
+    compile 'com.squareup.mimecraft:mimecraft:1.1.0'
+    compile 'org.jsoup:jsoup:1.7.2'
 }

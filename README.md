@@ -15,4 +15,12 @@ Unlike on iOS, where similarly implementing your own HTTP requests has the follo
 
 from which you can determine the HTTP method by querying the `NSURLRequest` object, Android only passes the `url` making it infeasible to determine whether the intercepted webview request was actually a GET request, a POST request, or any other types of HTTP methods.
 
-This project proposes a very simple sample application in which we demonstrate how we can deduce the HTTP method  to properly intercept web view requests to our own HTTP client.
+This project proposes a very simple sample application in which we demonstrate how we can deduce the HTTP method through Javascript to properly intercept web view requests to our own HTTP client.
+
+## To run
+
+Navigate to `android-post-webview/PostWebview/` and run 
+
+```
+./gradlew installDebug
+```
